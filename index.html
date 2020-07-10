@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortener</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    
+    <!-- <div id="overlay"> -->
+        
+        
+        <div class="url-main-container">
+            <h1> <span id="remake">Remake</span> Url Shortener</h1>
+            <p>Too Long Url? Check out our <em>hassle-free</em> url shortener app</p>
+            <h2>Steps to Use..</h2>
+            <ul id="list-steps">
+                <li>Enter your long url in the field below</li>
+                <li>Click the <strong>Shorten</strong> button</li>
+                <li>Check your new concisely made url</li>
+                <li>Click url link or copy to share</li>
+            </ul>
+
+            <div class="style-url-box" id="form">
+                <form action="">
+                    <div class="input-box">
+                        <label for="input-url-label" id="input-url-label"></label>
+                        <div id="not-empty"></div>
+                        <div id="url-input-box">
+                            <input type="text" id="url-input" placeholder="Paste a long url">
+                            <button id="shorten" type="button">
+                                Shorten
+                                <i class="fas fa-link"></i>
+                             </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="style-url-box" id="display-url">
+                <!-- <div class="old-new-url" id="old-url">Long/Old Url</div> -->
+                <div id="new-url">Short/New Url</div>
+                <p id="voila">Voila!!!</p>
+                <div id="show-new-url"> 
+                    <div id="location-link">
+                        <a href="#" id="visit-link">
+                            Click <span id="link"></span>
+                            <!-- <i class="fas fa-location-arrow"></i> -->
+                        </a>
+                    </div>
+                    <p id="option"> OR </p>
+                    <button type="button" id="copy"> COPY</button>
+                </div>
+            </div>
+            
+
+            <!-- <div id="myModal" class="modal">
+            
+              
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Modal Header</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the Modal Body</p>
+                        <p>Some other text...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
+                </div>
+            
+            </div> -->
+        </div>
+    <!-- </div> -->
+    
+</body>
+
+    <script src="js/custom.js"></script>
+</html>
