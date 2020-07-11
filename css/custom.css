@@ -153,7 +153,7 @@ h2 {
     height: auto;
     margin: 50px auto;
     /* border: 1px solid red; */
-    background-color: cornflowerblue;
+    background-color: rgba(100, 149, 237, 0.8);
     color: #191e22;
     font-weight: 600;
     padding: 20px;
