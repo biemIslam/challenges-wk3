@@ -39,7 +39,7 @@ function animateLabel() {
         }
     }
 }
-animateLabel()
+// animateLabel()
 // setInterval(() => {
 //     timeout = setTimeout(animateLabel, 70);
 // }, 3000);
@@ -65,6 +65,24 @@ shorten.addEventListener('click', () => {
             shortUrl.addEventListener('click', () => {
                 document.getElementById('visit-link').href = checkUrl;
             })
+
+            // function windowLocation() {
+            //     var location = window.location.href
+               
+
+            //     // var windowUrl = window.location.href;
+            //     window.addEventListener("keyup", function (event) {
+            //         if (event.keyCode === 13) {
+            //             event.preventDefault();
+            //             if (location == shortUrl) {
+            //                 alert(location)
+            //             }
+            //             // document.getElementById("myBtn").click();
+            //         }
+            //     });
+            // }
+
+            // windowLocation();
         }
         else {
             shortUrl.innerHTML = 'http://' + 'short.url/' + randomStr.toLocaleUpperCase();
@@ -96,6 +114,7 @@ copy.addEventListener('click', () => {
     document.execCommand('copy');
     document.body.removeChild(temp);
 })
+
 
 //toggle menu function
 function toggle() {
