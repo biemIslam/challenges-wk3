@@ -264,9 +264,10 @@ button#copy {
     /* top: 0; */
     height: auto;
     /* background-color: white; */
-    background-image: url('../images/bg-img.jpg');
+    background: linear-gradient(to right, #fcfcfc, #e2e3e8);
+    /* background-image: url('../images/bg-img.jpg');
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
     clip-path: polygon(82% 14%, 60% 4%, 39% 14%, 15% 5%, 0% 13%, 0% 54%, 0% 100%, 42% 100%, 42% 100%, 64% 100%, 100% 100%, 100% 73%, 100% 47%, 100% 5%);
     color: black;
     font-weight: 500;
