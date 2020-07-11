@@ -213,7 +213,7 @@ button[type=button]#shorten:hover, button#copy:hover {
 #show-new-url {
     /* display: flex;
     justify-content: space-evenly; */
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 #new-url {
