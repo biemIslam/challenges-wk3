@@ -25,10 +25,101 @@ body {
     /* font-size: 16px; */
 }
 
+header {
+    background: linear-gradient(to right, #fcfcfc, #e2e3e8);
+    padding: 10px;
+    max-height: 70px;
+    transition: max-height 2s ease-in;
+    /* background-color: #e2e3e8; */
+    /* #fcfcfc */
+}
+
+.header-transition {
+    max-height: 1500px;
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: justify;
+    position: relative;
+    /* height: auto; */
+}
+
+div#logo {
+    position: relative;
+}
+
+nav img {
+    max-width: 100%;
+    width: 15%;
+    height: auto;
+    margin-top: 10px;
+}
+
+span#remake-logo {
+    color: rgb(49, 49, 235);
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    transform: rotate(-20deg);
+}
+
+nav ul {
+    list-style-type: none;
+    position: relative; 
+    
+    /* right: 15%; */
+    
+}
+
+nav ul#menu li {
+    
+    /* width: 100%; */
+}
+
+.nav-menu-links {
+    margin: 50px 20px 0;
+    display: none;
+}
+
+.toggleLinks {
+    display: block;
+}
+
+nav li a {
+    color: rgb(49, 49, 235);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav li#signup a {
+    text-decoration: underline;
+    color: tomato;
+    font-size: 1em;
+}
+
+
+
+#toggle-menu {
+    margin: 15px auto;
+    position: absolute;
+    right: 0;
+}
+
+.toggle-lines {
+    width: 20px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: rgb(49, 49, 235);
+}
+
 .url-main-container {
     max-width: 100%;
     /* width: 50%; */
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 h1, h1 span  {
@@ -40,7 +131,7 @@ h1 span {
 }
 
 p {
-    font-weight: 800;
+    /* font-weight: 800; */
     /* font-size: 18px; */
     letter-spacing: 0.2em;
     padding: 15px;
@@ -53,17 +144,8 @@ p em {
 }
 
 h2 {
-    padding-top: 30px;
-}
-ul#list-steps {
-    list-style-type: none;
-    
-    /* text-align: justify; */
-}
-
-ul li {
-    color: white;
-    word-spacing: 5px;
+    /* padding: 50px auto; */
+    font-size: 1.5em;
 }
 
 .style-url-box {
@@ -73,7 +155,7 @@ ul li {
     /* border: 1px solid red; */
     background-color: cornflowerblue;
     color: #191e22;
-    font-weight: 800;
+    font-weight: 600;
     padding: 20px;
     border-radius: 10px;
     font-size: 1.5em;
@@ -173,8 +255,124 @@ button#copy {
     outline: none;
 }
 
+.steps {
+    position: absolute;
+    /* bottom: 0; */
+    margin-top: 44px;
+    padding: 10px;
+    width: 100%;
+    /* top: 0; */
+    height: auto;
+    /* background-color: white; */
+    background-image: url('../images/bg-img.jpg');
+    background-position: center center;
+    background-size: cover;
+    clip-path: polygon(82% 14%, 60% 4%, 39% 14%, 15% 5%, 0% 13%, 0% 54%, 0% 100%, 42% 100%, 42% 100%, 64% 100%, 100% 100%, 100% 73%, 100% 47%, 100% 5%);
+    color: black;
+    font-weight: 500;
+    /* text-align: justify; */
+}
+
+#how-it-works {
+    margin-top: 120px;
+}
+
+ul#list-steps {
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px auto;
+    line-height: 2em;
+    text-align: justify;
+}
+
+ul li {
+    margin-bottom: 30px;
+    /* color: white; */
+    /* word-spacing: 5px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    text-align: center;
+}
+
+li img {
+    max-width: 100%;
+    width: 20%;
+    height: auto;
+}
+
+li span {
+    font-size: 1.3em;
+    /* text-align: center; */
+}
+
+li span strong{
+    font-size: 24px;
+}
+
+#connect{
+    margin: 20px auto;
+}
+
+#connect h2{
+    padding: 10px;
+    font-weight: 800;
+}
+
+#connect a {
+    margin: auto 10px;
+}
+
+#connect i {
+    font-size: 1.3em;
+}
+
+i.fa-github {
+    color: black;
+}
+
+i.fa-twitter {
+    color: #1da1f2;
+}
+
+i.fa-linkedin-in {
+    color: #0077b5;
+}
+
 
 @media only screen and (min-width: 768px) {
+    nav img {
+        width: 5%;
+    } 
+
+    .nav-menu-links {
+        margin: 10px 20px 0;
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+    }
+
+    .nav-menu-links ul{
+        display: flex;
+        justify-content: space-between;
+        /* position: relative; */
+    }
+    
+    .nav-menu-links li {
+        /* width: 100%; */
+    }
+
+    .nav-menu-links li a {
+        padding: 10px;
+    }
+
+
+    #toggle-menu {
+        display: none;
+    }
+
     h1, h1 span {
         font-size: 2.5em;
     }
@@ -221,6 +419,30 @@ button#copy {
         margin: 0;
         border-bottom-left-radius: 0px;
         border-top-left-radius: 0px;
+    }
+
+    #how-it-works {
+        margin-top: 170px;
+    }
+
+    li img {
+        width: 10%;
+    }
+
+    li span {
+        font-size: 1.5em;
+    }
+
+    li span strong{
+        font-size: 32px;
+    }
+
+    #connect {
+        margin: 40px auto;
+    }
+
+    #connect i {
+        font-size: 32px;
     }
 }
 

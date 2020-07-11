@@ -96,3 +96,13 @@ copy.addEventListener('click', () => {
     document.execCommand('copy');
     document.body.removeChild(temp);
 })
+
+//toggle menu function
+function toggle() {
+    document.getElementById('toggle-menu').addEventListener('click', () => {
+        document.querySelector('.nav-menu-links').classList.toggle('toggleLinks');
+        document.querySelector('header').classList.toggle('header-transition');
+    })
+}
+
+toggle();

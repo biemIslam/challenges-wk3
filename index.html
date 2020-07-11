@@ -4,26 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Url Shortener</title>
-    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
     
     <!-- <div id="overlay"> -->
+        <header>
+            <nav>
+                <div id="logo">
+                    <img src="images/link4.png" alt="">
+                    <span id="remake-logo">Remake</span> 
+                </div>
+                <div id="links">
+                    <div id="toggle-menu">
+                        <div class="toggle-lines"></div>
+                        <div class="toggle-lines"></div>
+                        <div class="toggle-lines"></div>
+                    </div>
+                    <div class="nav-menu-links">
+                        <ul id="menu"> 
+                            <!-- <li> <a href="#"> Home </a> </li> -->
+                            <li> <a href="#"> About </a></li>
+                            <li> <a href="#how-it-works"> How it works </a></li>
+                            <li> <a href="#connect"> Contact </a></li>
+                            <li id="signup"> <a href="#"> Sign up </a></li>
+                            <li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
         
         
         <div class="url-main-container">
             <h1> <span id="remake">Remake</span> Url Shortener</h1>
             <p>Too Long Url? Check out our <em>hassle-free</em> url shortener app</p>
-            <h2>Steps to Use..</h2>
-            <ul id="list-steps">
-                <li>Enter your long url in the field below</li>
-                <li>Click the <strong>Shorten</strong> button</li>
-                <li>Check your new concisely made url</li>
-                <li>Click url link or copy to share</li>
-            </ul>
 
             <div class="style-url-box" id="form">
                 <form action="">
@@ -58,24 +76,34 @@
             </div>
             
 
-            <!-- <div id="myModal" class="modal">
-            
-              
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close">&times;</span>
-                        <h2>Modal Header</h2>
-                    </div>
-                    <div class="modal-body">
-                        <p>Some text in the Modal Body</p>
-                        <p>Some other text...</p>
-                    </div>
-                    <div class="modal-footer">
-                        <h3>Modal Footer</h3>
-                    </div>
+            <div class="steps">
+                <div id="how-it-works">
+                    <h2>HOW IT WORKS..</h2>
+                    <ul id="list-steps">
+                        <li> 
+                            <img src="images/textfield.png" alt="input-textbox">
+                            <span>Enter your long url in the field</span>
+                         </li>
+                        <li>
+                            <span>Click the <strong>Shorten</strong> button</span>
+                            <img src="images/link4.png" alt="link-image">
+                        </li>
+                        <!-- <li>Check your new concisely made url</li> -->
+                        <li>
+                            <img src="images/click.png" alt="mouse-click">
+                            <span>Click url link or copy to share</span>
+                        </li>
+                    </ul>
                 </div>
-            
-            </div> -->
+
+                <div id="connect">
+                    <h2>CONNECT</h2>
+                    <a href="https://github.com/biemislam"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/codyBiem"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/bellomaryam/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                
+            </div>
         </div>
     <!-- </div> -->
     
