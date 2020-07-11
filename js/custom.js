@@ -100,8 +100,8 @@ copy.addEventListener('click', () => {
 //toggle menu function
 function toggle() {
     document.getElementById('toggle-menu').addEventListener('click', () => {
-        document.querySelector('.nav-menu-links').classList.toggle('toggleLinks');
         document.querySelector('header').classList.toggle('header-transition');
+        document.querySelector('.nav-menu-links').classList.toggle('toggleLinks');
     })
 }
 
