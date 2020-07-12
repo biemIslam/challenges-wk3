@@ -1,4 +1,4 @@
-const urlLabel = document.getElementById('input-url-label');
+const urlLabel = document.getElementById('typing-effect');
 const shorten = document.getElementById('shorten');
 const copy = document.getElementById('copy');
 const displayUrl = document.getElementById('display-url');
@@ -12,34 +12,34 @@ var shortUrl = document.getElementById('link');
 function animateLabel() {
 
     var i = 0;
-    const textLabel = 'Enter Your Url';
+    const textLabel = 'Your Url';
     var timeout = null;
 
     function typeText() {
         if (i < textLabel.length) {
             urlLabel.innerHTML += textLabel.charAt(i);
             i++;
-            timeout = setTimeout(typeText, 100);
+            timeout = setTimeout(typeText,200);
         } 
         else {
-            timeout = setTimeout(eraseText, 100)
+            timeout = setTimeout(eraseText, 200)
         }
     }
     typeText();
 
     function eraseText() {
-        if (i >= 0) {
-            var temp = textLabel.substring(0, i)
+        if (i > 0) {
+            var temp = textLabel.substring(0, i-1)
             urlLabel.innerHTML = temp;
             i--;
-            timeout = setTimeout(eraseText, 100);
+            timeout = setTimeout(eraseText, 200);
         }
         else {
-            timeout = setTimeout(typeText, 100)
+            timeout = setTimeout(typeText, 200)
         }
     }
 }
-// animateLabel()
+animateLabel()
 // setInterval(() => {
 //     timeout = setTimeout(animateLabel, 70);
 // }, 3000);
@@ -99,26 +99,27 @@ shorten.addEventListener('click', () => {
     
 })
 
-copy.addEventListener('click', () => {
-    copy.innerHTML = 'COPIED';
-    var getUrl = shortUrl.innerText;
-    // alert(getUrl);
-    var temp = document.createElement('input');
-    document.body.appendChild(temp);
-    temp.value = getUrl;
-    temp.select();
+// copy.addEventListener('click', () => {
+//     copy.innerHTML = 'COPIED';
+//     var getUrl = shortUrl.innerText;
+//     // alert(getUrl);
+//     var temp = document.createElement('input');
+//     document.body.appendChild(temp);
+//     temp.value = getUrl;
+//     temp.select();
     
 
-    // shortUrl.select();
-    // shortUrl.setSelectionRange(0, 99999);
-    document.execCommand('copy');
-    document.body.removeChild(temp);
-})
+//     // shortUrl.select();
+//     // shortUrl.setSelectionRange(0, 99999);
+//     document.execCommand('copy');
+//     document.body.removeChild(temp);
+// })
 
 
 //toggle menu function
 function toggle() {
     document.getElementById('toggle-menu').addEventListener('click', () => {
+        // alert('vbjhv')
         document.querySelector('header').classList.toggle('header-transition');
         document.querySelector('.nav-menu-links').classList.toggle('toggleLinks');
     })

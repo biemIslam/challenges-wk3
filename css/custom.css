@@ -29,7 +29,7 @@ header {
     background: linear-gradient(to right, #fcfcfc, #e2e3e8);
     padding: 10px;
     max-height: 70px;
-    transition: max-height 2s ease-in;
+    transition: max-height 2s ease-in-out;
     /* background-color: #e2e3e8; */
     /* #fcfcfc */
 }
@@ -163,8 +163,13 @@ h2 {
 
 form label#input-url-label {
     font-size: 1.5em;
-    transform: translateY(300%);
+    /* transform: translateY(300%); */
     text-transform: uppercase;
+}
+
+form label#input-url-label span {
+    font-size: 1em;
+    color: tomato;
 }
 
 div#not-empty {
@@ -302,12 +307,13 @@ li img {
 }
 
 li span {
-    font-size: 1.3em;
+    font-size: 1em;
     /* text-align: center; */
 }
 
-li span strong{
-    /* font-size: 24px; */
+li span#shorten-text{
+    font-size: 20px;
+    font-weight: 600;
 }
 
 #connect{
@@ -431,11 +437,11 @@ i.fa-linkedin-in {
     }
 
     li span {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
-    li span strong{
-        font-size: 32px;
+    li span#shorten-text{
+        font-size: 1.4em;
     }
 
     #connect {
