@@ -12,8 +12,7 @@ App can be viewed at: https://remake-shortener.netlify.app
 ## Task 2 is A Display Picture (DP) Generator built with HTML,CSS & JS. 
 This app is used to generate a user's display picture with user's name.
 ### How to Run: 
-1. **Go to : https://remake-shortener.netlify.app**
-2. Click on **Get A DP** in the navigation bar (or hamburger on mobile device)
+1. **Go to : https://remake-shortener.netlify.app/dp.html**
 2. **Enter your name in the text field:** 
 3. **Click "Select an image" button:** When a user clicks this button, a dialog box is shown to allows a user choose an image from their device photos.
 3. **Click "Generate Dp" button:** A Frame including user's uploaded image and name is generated
