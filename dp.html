@@ -1,1 +1,65 @@
-htm
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Picture Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/fontawesome5/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div id="instructions">
+            <h1>A Display Picture (DP) Generator</h1>
+            
+            <p>To generate your DP</p>
+            <div id="list">
+            
+                <p>Enter Your name in the textfield</p>
+                <p>Click Select an Image button to select your image</p>
+                <p>Click Generate DP</p>
+            
+            </div>
+        </div>
+        <div id="canvas-box">
+            <div id="form-div">
+                <form action="">
+                    <div id="text-info">
+                        <label for="name">Full Name</label>
+                        <div id="input-text">
+                            <input type="text" placeholder="Enter your full name" id="name">
+                        </div>
+                    </div>
+        
+                    <div id="file-image">
+                        <!-- <input type="file" id="select-file" value="Select an image"> -->
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" onchange="readImageUrl(this)">
+                        <button type="button" class="" id="btn-click-file">
+                            <i class="fas fa-camera"></i>
+                            Select an image
+                            <!-- <i class="fas fa-pencil-alt"></i> -->
+                        </button>
+                    </div>
+        
+                </form>
+            </div>
+        
+            <p id="previewImage"> <img width="280" height="280" alt="previw-image" id="image-preview"></p>
+            <canvas id="canvas" width="300" height="300"></canvas>
+            <button type="button" class="" id="generate">
+                Generate DP
+            </button>
+        
+        </div>
+    
+    </div>
+
+</body>
+<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+<script src="js/dp.js"></script>
+
+</html>

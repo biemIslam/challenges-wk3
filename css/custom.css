@@ -281,6 +281,12 @@ button#copy {
 
 #how-it-works {
     margin-top: 120px;
+    transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+}
+
+#menu-how-it-works {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
 }
 
 ul#list-steps {
@@ -458,3 +464,6 @@ i.fa-linkedin-in {
         width: 50%;
     }
 }
+
+
+/* dp  css */
