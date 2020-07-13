@@ -48,7 +48,7 @@ h1 ~ p {
 }
 
 div#list p {
-    /* list-style-type: none; */
+    /* list-style-type: square; */
     line-height: 1.2em;
     font-size: 18px;
     letter-spacing: 0.1em;
@@ -65,6 +65,46 @@ h1 {
     background-color: #eeebeb;
     border: 1px solid #5A4978;
     border-radius: 50%;
+}
+
+#frame-canvas {
+    background-color: #eeebeb;
+    border: 1px solid #5A4978;
+    border-radius: 65px 4px 65px 4px;
+-moz-border-radius: 65px 4px 65px 4px;
+-webkit-border-radius: 65px 4px 65px 4px;
+
+    /* margin: 20px 180px; */
+}
+
+#frame {
+    display: none;
+    background-color: #5A4978;;
+    max-width: 100%;
+    /* width: 80%; */
+    margin: 20px auto;
+    padding: 10px;
+    /* max-width: 100%;
+    width: 50%;
+    margin: 0 auto; */
+    height: auto;
+    text-align: center;
+}
+
+#frame p {
+    color: white;
+    font-size: 22px;
+    /* text-align: center; */
+    font-style: italic;
+    padding: 15px;
+}
+
+#frame span {
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(255, 62, 28);
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 #imageUpload {
@@ -89,7 +129,7 @@ p#previewImage {
     /* border-radius: 50%; */
 }
 
-button[type=button] {
+button[type=button], input[type=button] {
     border-radius: 30px;
     padding: 15px;
     max-width: 100%;
@@ -112,8 +152,15 @@ button[type=button]#generate{
     background-color: white;
     border-color: white;
     color: #5A4978;
-    font-size: 1.2em;
-    font-weight: 600;
+    /* font-size: 1.2em;
+    font-weight: 600; */
+}
+
+#frame input[type=button] {
+    /* width: 30%; */
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 0;
 }
 
 button i.fa-camera {
@@ -141,4 +188,79 @@ input#name {
     outline: none;
     padding: 15px;
     border-color: #5A4978;
+}
+
+#image-frame {
+    display: none
+}
+
+@media only screen and (min-width: 768px) {
+    #canvas-box {
+        text-align: center;
+    }
+
+    #input-text {
+        display: inline;
+        
+        /* justify-content: center; */
+    }
+
+    input#name {
+        width: 60%;
+        margin: auto 10px;
+    }
+
+    #file-image {
+        /* margin: 30px auto 0;
+        position: relative; */
+        /* left: 50px; */
+        /* position: relative; */
+        /* border: 1px solid red; */
+    }
+
+    #canvas {
+        margin: -30px auto 0;
+       /* position: relative; */
+       /* top: -35px; */
+       /* bottom: 5%; */
+    }
+
+    button[type=button] {
+        width: 40%;
+        padding: 20px;
+    }
+
+    button[type=button]#btn-click-file {
+        margin: 30px auto 0;
+        position: relative;
+        top: 10px;
+        left: 17%;
+        
+        /* border: 1px solid red; */
+    }
+
+    button[type=button]#generate{
+        width: 40%;
+        margin: 20px -5px;
+    }
+
+    #frame {
+        margin: 200px auto;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-container {
+        border-radius: 10px;
+        display: flex;
+        width: 98%;
+        /* margin: 200px; */
+        margin: 100px auto;
+        justify-content: space-between;
+    }
+
+    #canvas-box {
+        border-radius: 10px;
+    }
 }
