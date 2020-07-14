@@ -40,7 +40,7 @@ function readImageUrl(input) {
                     return;
                 }
                 ctx.drawImage(imagePreview, 0, 0, canvas.width, canvas.height);
-                // framectx.drawImage(document.getElementById('image-frame'), 0, 0);
+                framectx.drawImage(document.getElementById('image-frame'), 0, 0,canvas.width, canvas.height);
             }
             // ctx.drawImage(imagePreview, 0, 0);
             // framectx.drawImage(document.getElementById('image-frame'), 0, 0);
