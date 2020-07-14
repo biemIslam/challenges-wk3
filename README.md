@@ -9,7 +9,7 @@ This app is used to generate a short url when a user enters a long url and click
 App can be viewed at: https://remake-shortener.netlify.app
 
 
-## Task 2 is A Display Picture (DP) Generator built with HTML,CSS & JS. 
+## Task 2 is A Display Picture (DP) Generator built with Javascript Canvas Api. 
 This app is used to generate a user's display picture with user's name.
 ### How to Run: 
 1. **Go to : https://remake-shortener.netlify.app/dp.html**
