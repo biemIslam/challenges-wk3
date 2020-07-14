@@ -142,7 +142,7 @@ button[type=button], input[type=button] {
     height: auto;
     margin: 0 35px;
     background-color: #100229;
-    border-color: #100229;
+    border: 1px solid #100229;
     outline: none;
     color: white;
     font-size: 1.2em;
@@ -150,15 +150,17 @@ button[type=button], input[type=button] {
     /* margin: 0 auto; */
 }
 
-button[type=button]:hover{
-    
+button[type=button]#btn-click-file:hover{
+    background-color: rgba(16, 2, 41, 0.5);
+    border: 1px solid rgba(16, 2, 41, 0.5);
+    outline: none;
 }
 
 button[type=button]#generate{
     width: 70%;
     margin: 20px 35px;
     background-color: white;
-    border-color: white;
+    border:1px solid white;
     color: #5A4978;
     /* font-size: 1.2em;
     font-weight: 600; */
@@ -195,7 +197,7 @@ input#name {
     border-radius: 10px;
     outline: none;
     padding: 15px;
-    border-color: #5A4978;
+    border:1px solid #5A4978;
 }
 
 #image-frame {
