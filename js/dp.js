@@ -94,8 +94,8 @@ document.getElementById('remove').addEventListener('click', () => {
 })
 
 generateClick.addEventListener('click', () => {
-    var username = document.getElementById('user-name');
-    var yourname = document.getElementById('name');
+    // var username = document.getElementById('user-name');
+    // var yourname = document.getElementById('name');
     var boxNone = document.getElementById('instructions');
     var canvasboxNone = document.getElementById('canvas-box');
     var dpFrame = document.getElementById('frame');
@@ -110,12 +110,13 @@ generateClick.addEventListener('click', () => {
         var appendPara = textInfo.insertBefore(para, textInfo.children[0]);
     }
     else {
-    // let n;
-        // for (let j = 0; j < username.length; i++) {
-        //     username[j].innerHTML = inputValue.value;
-        // }
+        var n, j;
+        n = document.querySelectorAll(".username");
+        for (j = 0; j < n.length; j++) {
+            n[j].innerHTML = inputValue.value;
+        }
         // return;
-        username.innerHTML = inputValue.value;
+        // username.innerHTML = inputValue.value;
         // yourname.innerHTML = inputValue.value;
         boxNone.style.display = 'none';
         canvasboxNone.style.display = 'none';
@@ -125,19 +126,21 @@ generateClick.addEventListener('click', () => {
 })
 
 document.getElementById('download-btn').addEventListener('click', () => {
-    // let imgPath = imageFramePreview.getAttribute("src", e.target.result);
+    // let imgPath = imageFramePreview.getAttribute("src");
     // let imgFilename = getImgFilename(imgPath);
+
+    let customFilename = inputValue.value + 'DP' + '.png';
     // alert('fdfg')
 
     frameCanvas.toBlob(function (blob) {
-        saveAs(blob, 'canvas.png');
+        saveAs(blob, customFilename);
     });
 
     // saveAs(imgPath, imgFilename);
 });
 
-function getImgFilename(filename) {
-    return filename.substring(filename.lastIndexOf('/') + 1);
-}
+// function getImgFilename(filename) {
+//     return filename.substring(filename.lastIndexOf('/') + 1);
+// }
     
 
