@@ -12,7 +12,7 @@ var shortUrl = document.getElementById('link');
 function animateLabel() {
 
     var i = 0;
-    const textLabel = 'Your Url';
+    const textLabel = 'Enter Your Url';
     var timeout = null;
 
     function typeText() {

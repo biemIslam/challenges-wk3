@@ -74,11 +74,16 @@ h1 {
 #frame-canvas {
     background-color: #eeebeb;
     border: 1px solid #5A4978;
-    border-radius: 65px 4px 65px 4px;
--moz-border-radius: 65px 4px 65px 4px;
--webkit-border-radius: 65px 4px 65px 4px;
+    /* border-radius: 65px 4px 65px 4px;
+    -moz-border-radius: 65px 4px 65px 4px;
+    -webkit-border-radius: 65px 4px 65px 4px; */
+}
 
-    /* margin: 20px 180px; */
+img#img-frame {
+    /* border: 1px solid #eeebeb; */
+    /* border-radius: 65px 4px 65px 4px;
+    -moz-border-radius: 65px 4px 65px 4px;
+    -webkit-border-radius: 65px 4px 65px 4px; */
 }
 
 #frame {
@@ -95,7 +100,7 @@ h1 {
     text-align: center;
 }
 
-#frame p {
+#frame p, #img-caption {
     color: white;
     font-size: 22px;
     /* text-align: center; */
@@ -103,7 +108,7 @@ h1 {
     padding: 15px;
 }
 
-#frame span {
+#frame span, figcaption span {
     font-style: italic;
     font-weight: 600;
     color: rgb(255, 62, 28);
@@ -121,7 +126,7 @@ h1 {
     border: 1px solid red; */
 }
 
-p#previewImage {
+p#previewImage, #image-frame-preview {
     display: none;
 }
 
@@ -166,11 +171,15 @@ button[type=button]#generate{
     font-weight: 600; */
 }
 
-#frame input[type=button] {
+input[type=button] {
     /* width: 30%; */
     font-size: 16px;
     padding: 10px;
     margin: 0 0;
+}
+
+input[type=button].hide-btn {
+    display: none;
 }
 
 button i.fa-camera {
@@ -249,13 +258,15 @@ a#here {
         padding: 20px;
     }
 
-    button[type=button]#btn-click-file {
+    button[type=button]#btn-click-file, input[type=button].hide-btn {
         margin: 30px auto 0;
         position: relative;
         top: 10px;
         left: 19%;
-        
-        /* border: 1px solid red; */
+    }
+
+    input[type=button]#change {
+        /* display: inline; */
     }
 
     button[type=button]#generate{
@@ -276,9 +287,12 @@ a#here {
 @media only screen and (min-width: 1200px) {
     .main-container {
         border-radius: 10px;
-        display: flex;
         width: 90%;
         margin: 50px auto;
+    }
+
+    #main-content {
+        display: flex;
         justify-content: space-between;
     }
 
@@ -303,7 +317,7 @@ a#here {
         /* padding: 15px; */
     }
 
-    button[type=button]#btn-click-file {
+    button[type=button]#btn-click-file, input[type=button].hide-btn {
         margin: 30px auto 0;
         position: relative;
         top: 10px;

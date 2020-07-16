@@ -13,63 +13,85 @@
 <body>
 
     <div class="main-container">
-        <div id="instructions">
-            <h1>A Display Picture (DP) Generator</h1>
+        <div id="main-content">
+            <div id="instructions">
+                <h1>A Display Picture (DP) Generator</h1>
             
-            <p>To generate your DP</p>
-            <div id="list">
+                <p>To generate your DP</p>
+                <div id="list">
             
-                <p>Enter Your name in the textfield</p>
-                <p>Click Select an Image button to select your image</p>
-                <p>Click Generate DP</p>
+                    <p>Enter Your name in the textfield</p>
+                    <p>Click Select an Image button to select your image</p>
+                    <p>Click Generate DP</p>
             
+                </div>
             </div>
-        </div>
-        <div id="canvas-box">
-            <div id="form-div">
-                <form action="">
-                    <div id="text-info">
-                        <label for="name">Full Name</label>
-                        <div id="input-text">
-                            <input type="text" placeholder="Enter your full name" id="name">
+            <div id="canvas-box">
+                <div id="form-div">
+                    <form action="">
+                        <div id="text-info">
+                            <label for="name">Full Name</label>
+                            <div id="input-text">
+                                <input type="text" placeholder="Enter your full name" id="name">
+                            </div>
                         </div>
-                    </div>
-        
-                    <div id="file-image">
-                        <!-- <input type="file" id="select-file" value="Select an image"> -->
-                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" onchange="readImageUrl(this)">
-                        <button type="button" class="" id="btn-click-file">
-                            <i class="fas fa-camera"></i>
-                            Select an image
-                            <!-- <i class="fas fa-pencil-alt"></i> -->
-                        </button>
-                    </div>
-        
-                </form>
+            
+                        <div id="file-image">
+                            <!-- <input type="file" id="select-file" value="Select an image"> -->
+                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" onchange="readImageUrl(this)">
+                            <button type="button" class="" id="btn-click-file">
+                                <i class="fas fa-camera"></i>
+                                Select an image
+                            </button>
+            
+            
+                            <input type="button" onchange="readImageUrl(this)" class="hide-btn" id="change" value="Change Image">
+                            <input type="button" class="hide-btn" id="remove" value="Remove Image">
+                        </div>
+            
+                    </form>
+                </div>
+            
+                <p id="previewImage">
+                    <img width="300" height="300" alt="previw-image" id="image-preview">
+                </p>
+                <canvas id="canvas" width="300" height="300"></canvas>
+                <button type="button" class="" id="generate">
+                    Generate DP
+                </button>
             </div>
-        
-            <p id="previewImage">
-                <img width="300" height="300" alt="previw-image" id="image-preview" style="border: 1px solid red;">
-            </p>
-            <canvas id="canvas" width="300" height="300"></canvas>
-            <button type="button" class="" id="generate">
-                Generate DP
-            </button>
+            
+            <div id="frame">
+                <canvas id="frame-canvas" width="300" height="300"></canvas>
+                <figure>
+                    <img width="300" height="300" alt="previw-image" id="image-frame-preview">
+                    <img id="image-frame" src="images/frame7.png" alt="" width="300" height="300">
+                    <figcaption id="img-caption">
+                        Beautifully made for you, <span id="name"></span>
+                    </figcaption>
+                </figure>
+            
+                <p>Hey <span id="user-name"></span>, here is a beautiful picture for you. Click <input type="button"
+                        id="download-btn" value="Download image"> to download</p>
+                <div id="back-div">
+                    Click <a href="dp.html" id="here">here</a> to go back to main page
+                </div>
+            </div>
         </div>
 
-        <div id="frame">
-            <canvas id="frame-canvas" width="300" height="300"></canvas>
-            <img id="image-frame" src="images/frame3.jpg" alt="" width="300" height="300">
-            <p>Hey <span id="user-name"></span>, here is a beautiful picture for you. Click <input type="button" value="Dowload image"> to download</p>
-            <div id="back-div">
-                Click <a href="dp.html" id="here">here</a> to go back to main page
-            </div>
+
+        <div id="footer-info">
+            DP App created by &copy;biem. 
+            Connect
+            <a href="https://github.com/biemislam"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/codyBiem"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/bellomaryam/"><i class="fab fa-linkedin-in"></i></a>
         </div>
     
     </div>
-
 </body>
 <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+<script src="js/FileSaver.min.js"></script>
 <script src="js/dp.js"></script>
 
 </html>
