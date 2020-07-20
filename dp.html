@@ -53,7 +53,7 @@
                 </div>
             
                 <p id="previewImage">
-                    <img width="300" height="300" alt="previw-image" id="image-preview">
+                    <img alt="previw-image" id="image-preview">
                 </p>
                 <canvas id="canvas" width="300" height="300"></canvas>
                 <button type="button" class="" id="generate">
@@ -64,14 +64,11 @@
             <div id="frame">
                 <canvas id="frame-canvas" width="300" height="300"></canvas>
                 <figure>
-                    <img width="300" height="300" alt="previw-image" id="image-frame-preview">
-                    <img id="image-frame" src="images/frame7.png" alt="" width="300" height="300">
-                    <figcaption id="img-caption">
-                        Beautifully made for you, <span class="username"></span>
-                    </figcaption>
+                    <!-- <img alt="previw-image" id="image-frame-preview"> -->
+                    <img id="image-frame" src="images/frame11-trans.png" alt="">
                 </figure>
             
-                <p>Hey <span class="username"></span>, here is a beautiful picture for you. Click <input type="button"
+                <p>Hey <span id="username"></span>, here is a display picture for you. Click <input type="button"
                         id="download-btn" value="Download image"> to download</p>
                 <div id="back-div">
                     Click <a href="dp.html" id="here">here</a> to go back to main page
